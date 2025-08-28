@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio Website</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 id="welcome-message">Hi (name), Welcome To Website</h1>
+                <p>This is a Portfolio Website</p>
+            </div>
+        </section>
+
+        <section id="profile" class="section-container">
+            <h2>Our Headquarter</h2>
+            <div class="headquarter-grid">
+                <div class="hq-item">
+                    <img src="https://wallpaperaccess.com/full/3763774.jpg" alt="Jakarta" class="hq-image">
+                    <p>Jakarta</p>
+                </div>
+                <div class="hq-item">
+                    <img src="https://dirgantaracarrental.com/wp-content/uploads/2020/10/gedung-sate1.jpg" alt="Bandung" class="hq-image">
+                    <p>Bandung</p>
+                </div>
+                <div class="hq-item">
+                    <img src="https://www.silverkris.com/wp-content/uploads/2017/11/Suroboyo-Monument.jpg" alt="Surabaya" class="hq-image">
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Check out some of our recent work and see how we've helped our clients succeed.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/05/project-management-computer-screen.jpeg.jpg" alt="Project Alpha">
+                    <h3>Project Alpha</h3>
+                    <p>A cutting-edge e-commerce platform with AI-powered recommendations.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">AI</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://gamerempire.net/wp-content/uploads/2023/03/What-is-The-Best-Starting-Location-in-Project-Zomboid.jpg" alt="Project Beta">
+                    <h3>Project Beta</h3>
+                    <p>A mobile application for social networking and event planning.</p>
+                    <div class="tech-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us" class="section-container">
+            <h2>Message Us</h2>
+            <div class="message-us-container">
+                <div class="form-side">
+                    <form id="message-form">
+                        <label for="full-name">Nama</label>
+                        <input type="text" id="full-name" name="fullName" placeholder="Nama" required>
+
+                        <label for="date-of-birth">Tanggal Lahir</label>
+                        <input type="date" id="date-of-birth" name="dateOfBirth" required>
+
+                        <div class="gender-options">
+                            <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                            <label for="male">Laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="submitted-side">
+                    <p id="current-time">Current Time: </p>
+                    <div id="submitted-messages-list">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Nabilla Alya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
